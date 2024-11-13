@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/index.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main class="container m-auto flex space-y-12 mt-24">
+      <aside class="relative">
+        <form id="task_form" action="#" class="flex flex-col space-y-8 p-4 shadow-2xl">
+          <input id="title" type="text" class="border-2 rounded-lg px-2" placeholder="Заголовок" />
+          <input
+            id="description"
+            type="text"
+            class="border-2 rounded-lg px-2"
+            placeholder="Описание" />
+
+          <button type="submit" class="btn" onclick="addTask(this,event)">Создать</button>
+        </form>
+      </aside>
+      <div class="w-full">
+        <ul id="filter_list" class="flex space-x-4 justify-self-center my-4">
+          <li class="filter_item filter_item__active" onclick="taskFilter(this)">Все</li>
+          <li class="filter_item" onclick="taskFilter(this)">Сделанные</li>
+          <li class="filter_item" onclick="taskFilter(this)">Несделанные</li>
+        </ul>
+        <ul id="task_list" class="space-y-2 w-full ml-12">
+          <!-- <li id="task_item" class="task_item">
+              <h4>123</h4>
+              <p>qwe</p>
+    
+              <button class="btn" onclick="deleteItem(this)">Удалить</button>
+            </li> -->
+          <!-- <li class="task_item task_item__n-active">
+              <h4>123</h4>
+              <p>qwe</p>
+              <div class="w-full flex justify-end">
+                <button class="btn">Удалить</button>
+              </div>
+            </li> -->
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 shadow-2xl bg-slate-200 rounded-lg hover:opacity-50 !text-black mt-2;
+  }
+  .user_item {
+    @apply shadow-2xl flex space-x-4 w-[384px];
+  }
+  .user_item img {
+    @apply object-cover object-top w-[100px] h-[100px];
+  }
+  .user_item div {
+    @apply p-4;
+  }
+}

@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .task_item {
+    @apply w-full p-4  cursor-pointer hover:opacity-70 shadow-2xl flex flex-col select-none;
+  }
+  .btn {
+    @apply px-4 py-2 shadow-2xl bg-slate-200 rounded-lg hover:opacity-50 !text-black mt-2;
+  }
+  .task_item__n-active {
+    @apply bg-gray-500 text-white opacity-50;
+  }
+  .filter_item{
+    @apply hover:opacity-50 cursor-pointer
+  }
+  .filter_item__active{
+    @apply font-bold
+  }
+}

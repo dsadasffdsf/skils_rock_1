@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/index.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main class="container m-auto flex space-y-12 mt-24 justify-center">
+      <ul id="user_list" class="grid grid-cols-3 gap-6">
+        <!-- Бюджетный аналог скелетонов -->
+        <li class="user_item">
+          <div>Загрузка</div>
+        </li>
+        <li class="user_item">
+          <div>Загрузка</div>
+        </li>
+        <li class="user_item">
+          <div>Загрузка</div>
+        </li>
+      </ul>
+    </main>
+    <section class="mt-14 bg-slate-300 p-4">
+      <div class="flex justify-center">
+        <button class="btn h-12 self-center" onclick="toLeft(this)">Назад</button>
+        <div class="flex w-[128px] overflow-x-hidden">
+          <ul id="carousel" class="flex ease-in-out duration-500">
+            <!-- <img class="w-[500px]" src="./cffbf51b515768e09aae97d318f60237.jpg" alt="" />
+            <img class="w-[500px]" src="./cffbf51b515768e09aae97d318f60237.jpg" alt="" />
+            <img class="w-[500px]" src="./cffbf51b515768e09aae97d318f60237.jpg" alt="" /> -->
+          </ul>
+        </div>
+        <button class="btn h-12 self-center" onclick="toRight(this)">Вперед</button>
+      </div>
+    </section>
+  </body>
+</html>
